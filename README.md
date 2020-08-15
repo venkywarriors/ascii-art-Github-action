@@ -3,6 +3,7 @@
 GitHub Action that prints ASCII art text.
 
 ## 🖌 Usage
+![alt text](https://github.com/venkywarriors/ascii-art-Github-action/blob/master/dockerlabs.jpeg?raw=true)
 ## Actions vs. Workflows
 Actions are **individual tasks** and workflows are **custom automated processes**
 
