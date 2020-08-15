@@ -1,9 +1,17 @@
-FROM ruby:2
 
-LABEL "version"="1.0.0"
 
-RUN gem install artii
 
-COPY artii.rb /bin/artii
 
-ENTRYPOINT ["artii"]
+
+
+
+
+
+
+FROM python:3
+
+ADD my_script.py /
+
+RUN pip install pyfiglet
+
+CMD [ "python", "./my_script.py" ]
