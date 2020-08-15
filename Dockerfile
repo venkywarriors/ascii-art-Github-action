@@ -15,3 +15,7 @@ RUN pip install pyfiglet
 # command to run on container start
 CMD [ "python", "/bin/my_script/my_script.py" ]
 
+#Use multi-stage builds
+FROM ubuntu
+RUN apt update && apt install -y cowsay
+CMD ["/usr/games/cowsay", "Dockerfiles are cool!"]
