@@ -1,10 +1,17 @@
 # set base image (host OS)
 FROM python:3.8
 
-RUN pip install pyfiglet
+ADD my_script.py /
+
+# Create a new directory
+RUN mkdir my_script && cd my_script
 
 # copy the content of the local src directory to the working directory
-COPY src/ .
+COPY my_script.py /bin/my_script/my_script.py
+
+# install dependency
+RUN pip install pyfiglet
 
 # command to run on container start
-CMD [ "python", "./my_script.py" ]
+CMD [ "python", "/bin/my_script/my_script.py" ]
+
