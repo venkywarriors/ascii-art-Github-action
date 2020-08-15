@@ -5,6 +5,7 @@ GitHub Action that prints ASCII art text.
 ## 🖌 Dockerfile
 The way to get our code running in a container is to pack it as a Docker image and then run a container based on it. 
 ![alt text](https://github.com/venkywarriors/ascii-art-Github-action/blob/master/Docker.png?raw=true)
+</br>
 To generate a Docker image we need to create a Dockerfile which contains instructions needed to build the image. The Dockerfile is then processed by the Docker builder which generates the Docker image. Then, with a simple docker run command, we create and run a container with the Python service.
 ## Actions vs. Workflows
 Actions are **individual tasks** and workflows are **custom automated processes**
