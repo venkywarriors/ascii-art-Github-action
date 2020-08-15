@@ -1,6 +1,6 @@
 name: 'ASCII Art Action'
 description: 'GitHub Action that prints ASCII art text'
-author: 'mscoutermarsh'
+author: 'venkateshwara rao'
 branding:
   icon: 'file-text'  
   color: 'green'
