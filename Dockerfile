@@ -1,11 +1,11 @@
-FROM python:3.7.5-slim
+# set base image (host OS)
+FROM python:3.8
 
-ADD my_script.py /
+# copy the dependencies file to the working directory
+COPY my_script.py .
 
+# install dependencies
 RUN pip install pyfiglet
 
-RUN mkdir my_script && cd my_script
-
-COPY my_script.py /bin/my_script/my_script.py
-
-CMD python /bin/my_script/my_script.py
+# command to run on container start
+CMD [ "python", "./my_script.py" ]
